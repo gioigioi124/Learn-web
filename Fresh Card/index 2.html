@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="styles/swiper.css" />
+    <link rel="stylesheet" href="/styles/test.css" />
+    <script
+      src="https://kit.fontawesome.com/a7ace0ec86.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- Slick slide -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body style="font-family: lexend; height: 3000px">
+    <!-- dòng mở đầu -->
+    <div class="container mb-2 text-center">
+      <span>Super Value Deals - Save more with coupons</span>
+    </div>
+    <!-- navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md bg-warning text-white rounded-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="/icons/freshcart-logo.svg"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-info"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img src="/icons/freshcart-logo.svg" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-md-0 mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-success" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <hr class="m-2" />
+    <!-- Baner -->
+    <div class="container mt-2 position-relative">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="3500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide
+          ><img src="images/pexels-hanamara-3650647.jpg" class="rounded-3" />
+          <div
+            class="banner-info position-absolute text-white test bg-black bg-opacity-50 p-2 rounded-2 text-start"
+          >
+            <h2>Title 1</h2>
+            <p>Description here</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+        </swiper-slide>
+        <swiper-slide
+          ><img
+            src="images/pexels-jatuphon-buraphon-110709-348689.jpg"
+            class="rounded-3"
+          />
+          <div
+            class="banner-info position-absolute text-white test bg-black bg-opacity-50 p-2 rounded-2 text-start"
+          >
+            <h1>Title here</h1>
+            <p>Description here</p>
+            <a href="#" class="btn btn-success">Order Now</a>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><img
+            src="images/pexels-picjumbo-com-55570-196643.jpg"
+            class="rounded-3"
+          />
+          <div
+            class="banner-info position-absolute text-white test bg-black bg-opacity-50 p-2 rounded-2 text-start"
+          >
+            <h1>Title here</h1>
+            <p>Description here</p>
+            <a href="#" class="btn btn-danger">Order Now</a>
+          </div></swiper-slide
+        >
+      </swiper-container>
+    </div>
+    <hr class="m-2" />
+    <!-- Product slide -->
+    <div class="container mt-1">Featured Catagories</div>
+    <div class="container mt-2">
+      <div class="slick-slider">
+        <div
+          class="product-item d-flex flex-column align-items-center mx-1 border border-1 border-dark-subtle p-2 rounded-2"
+        >
+          <img
+            src="images/product1.jpg"
+            class="rounded product-image"
+            alt="Product 1"
+          />
+          <h6 class="mt-2">Product 1</h6>
+        </div>
+        <div
+          class="product-item d-flex flex-column align-items-center mx-1 border border-1 border-dark-subtle p-2 rounded-2"
+        >
+          <img
+            src="images/product2.jpg"
+            class="rounded product-image"
+            alt="Product 2"
+          />
+          <h6 class="mt-2">Product 2</h6>
+        </div>
+        <div
+          class="product-item d-flex flex-column align-items-center mx-1 border border-1 border-dark-subtle p-2 rounded-2"
+        >
+          <img
+            src="images/product3.jpg"
+            class="rounded product-image"
+            alt="Product 3"
+          />
+          <h6 class="mt-2">Product 3</h6>
+        </div>
+        <div
+          class="product-item d-flex flex-column align-items-center mx-1 border border-1 border-dark-subtle p-2 rounded-2"
+        >
+          <img
+            src="images/product4.jpg"
+            class="rounded product-image"
+            alt="Product 4"
+          />
+          <h6 class="mt-2">Product 4</h6>
+        </div>
+        <div
+          class="product-item d-flex flex-column align-items-center mx-1 border border-1 border-dark-subtle p-2 rounded-2"
+        >
+          <img
+            src="images/product5.jpg"
+            class="rounded product-image"
+            alt="Product 5"
+          />
+          <h6 class="mt-2">Product 5</h6>
+        </div>
+        <div
+          class="product-item d-flex flex-column align-items-center mx-1 border border-1 border-dark-subtle p-2 rounded-2"
+        >
+          <img
+            src="images/product6.jpg"
+            class="rounded product-image"
+            alt="Product 6"
+          />
+          <h6 class="mt-2">Product 6</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Product slide script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        $(".slick-slider").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: false,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 6,
+              },
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <!-- Banner 1 -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="mt-2 mb-lg-0 col-md-6 col-12">
+          <div
+            class="py-10 px-8 rounded position-relative text-danger"
+            style="
+              background-image: url('/images/product1.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              height: 200px;
+            "
+          >
+            <div
+              class="banner1-info position-absolute"
+              style="left: 15px; bottom: 15px"
+            >
+              <p class="fw-bold m-0">Freshly Baked Buns</p>
+              <p class="m-0">Get Upto <span class="fw-bold">25%</span> Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 mb-lg-0 col-md-6 col-12">
+          <div
+            class="py-10 px-8 rounded position-relative text-danger"
+            style="
+              background-image: url('/images/Product2.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              height: 200px;
+            "
+          >
+            <div
+              class="banner1-info position-absolute"
+              style="left: 15px; bottom: 15px"
+            >
+              <p class="fw-bold m-0">Freshly Baked Buns</p>
+              <p class="m-0">Get Upto <span class="fw-bold">25%</span> Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popular product -->
+    <div class="container">
+      <div class="row">
+        <div class="mb-6 col-12"><h3 class="mb-0">Popular Products</h3></div>
+      </div>
+      <div class="g-4 row row-cols-lg-5 row-cols-md-3 row-cols-2">
+        <div class="col">
+          <div class="card-product card">
+            <div class="card-body">
+              <div class="text-center position-relative">
+                <div class="position-absolute top-0 start-0">
+                  <div class="d-flex gap-1 flex-column">
+                    <span class="custom-badge badge bg-danger">Sale</span
+                    ><span class="custom-badge badge bg-success">10%</span>
+                  </div>
+                </div>
+                <a href="/shop/haldirams-sev-bhujia"
+                  ><img
+                    src="/images/product1.jpg"
+                    alt="Grocery Ecommerce Template"
+                    class="mb-1 img-fluid"
+                /></a>
+              </div>
+              <div class="text-small">
+                <a class="text-decoration-none text-muted" href="#!"
+                  ><small>Snack &amp; Munchies</small></a
+                >
+              </div>
+
+              <a
+                class="text-inherit text-decoration-none"
+                href="/shop/haldirams-sev-bhujia"
+                >A product
+              </a>
+              <div class="d-flex flex-column align-items-start">
+                <div class="fw-bold text-bg-danger rounded-2 p-1 m-0">
+                  1,999,000 VNĐ
+                </div>
+                <div
+                  class="fw-bold text-decoration-line-through text-bg-secondary rounded-2 p-1 my-1"
+                >
+                  3,999,000 VNĐ
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-1"
+              >
+                <div>
+                  <a
+                    role="button"
+                    tabindex="0"
+                    href="#!"
+                    class="btn btn-primary btn-sm btn btn-primary"
+                    style="width: 100%"
+                  >
+                    + Add</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

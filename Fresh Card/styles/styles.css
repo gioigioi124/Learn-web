@@ -1,0 +1,41 @@
+.search_bar {
+  font-family: lexend;
+  color: rgb(128, 128, 128);
+  border: 2px solid rgba(128, 128, 128, 0.392);
+  width: 100%;
+  min-width: 30px;
+}
+.search_icon {
+  right: 6px;
+  top: 2px;
+}
+.search_icon:hover {
+  cursor: pointer;
+}
+.right-icon {
+  color: rgb(137, 137, 137);
+  position: relative;
+}
+.right-icon:hover {
+  cursor: pointer;
+}
+.notifications {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  font-size: 10px;
+  width: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 75, 75);
+  border-radius: 20%;
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.banner1-info {
+  box-shadow: 0px 0px 5px white;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 3px;
+}
