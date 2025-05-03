@@ -17,3 +17,7 @@
   background-size: cover;
   background-position: center;
 }
+.blur {
+  backdrop-filter: blur(3px);
+  background-color: #cccccc30;
+}
