@@ -35,9 +35,7 @@
           <!-- menu items -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="about.html"
@@ -54,7 +52,9 @@
               <a class="nav-link" aria-current="page" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
+              <a class="nav-link" aria-current="page" href="Contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
           <!-- sign button -->
@@ -85,72 +85,64 @@
         </div>
       </div>
     </nav>
-    <!-- about -->
-    <section class="py-4 border-bottom" style="margin-top: 40px">
+    <!-- chu thich -->
+    <header style="margin-top: 70px">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8">
             <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              alias nulla minus sunt similique
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              dignissimos aut
             </h5>
             <p class="text-secondary small">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur, debitis mollitia laudantium tenetur, tempora
-              obcaecati provident voluptatum
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum impedit blanditiis dolore modi doloremque adipisci
+              voluptas
             </p>
-            <a href="#!" class="btn btn-success mb-2 mb-md-0"
-              ><i class="fa-solid fa-user-plus me-1"></i>Sign up to Get
-              Started</a
-            >
           </div>
-          <div class="col-md-6">
-            <img class="img-fluid rounded-2" src="img/pic2.jpg" alt="" />
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-2 mb-md-0">
+            <ul class="list-group text-center">
+              <li class="list-group-item bg-light">FAQ</li>
+              <li class="list-group-item small text-secondary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias porro dolorum quibusdam quisquam consequatur
+              </li>
+              <li class="list-group-item bg-light">
+                <a href="#" class="btn btn-success btn small"
+                  ><i class="fa-solid fa-plane me-1"></i>See FAQ's</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-2 mb-md-0">
+            <ul class="list-group text-center">
+              <li class="list-group-item bg-light">FAQ</li>
+              <li class="list-group-item small text-secondary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias porro dolorum quibusdam quisquam consequatur
+              </li>
+              <li class="list-group-item bg-light">
+                <a href="#" class="btn btn-success btn small">See FAQ's</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-2 mb-md-0">
+            <ul class="list-group text-center">
+              <li class="list-group-item bg-light">FAQ</li>
+              <li class="list-group-item small text-secondary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias porro dolorum quibusdam quisquam consequatur
+              </li>
+              <li class="list-group-item bg-light">
+                <a href="#" class="btn btn-success btn small">See FAQ's</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- welcome -->
-    <section class="py-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <h5>Welcome to Tuhoc.CC</h5>
-            <p class="text-secondary small">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              cum sint nobis accusamus at voluptatibus rerum provident eius.
-              Iusto reiciendis quod blanditiis optio commodi, recusandae nulla
-              aliquam repellendus pariatur! At?
-            </p>
-            <a href="#!" class="btn btn-success mb-2 mb-md-0"
-              ><i class="fa-solid fa-book-tanakh me-1"></i>Read about</a
-            >
-          </div>
-        </div>
-        <div class="row align-items-center mt-2 text-secondary">
-          <div class="col-md-4">
-            <img class="img-fluid rounded-2" src="img/main-header.jpg" alt="" />
-          </div>
-          <div class="col-md-4 small">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              dolorem voluptas alias animi beatae quibusdam ab iusto minima
-              corrupti dolores, incidunt laborum laboriosam facere cum,
-              veritatis dolore? Sed, ratione doloribus?
-            </p>
-          </div>
-          <div class="col-md-4 small">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              dolorem voluptas alias animi beatae quibusdam ab iusto minima
-              corrupti dolores, incidunt laborum laboriosam facere cum,
-              veritatis dolore? Sed, ratione doloribus?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </header>
     <!-- subcribe -->
     <section class="subcrible py-5 mt-3">
       <div class="container">
@@ -265,7 +257,16 @@
     >
       Copyright © 2030. Gà Lại Lập Trình
     </footer>
-
+    <!-- sticky footer -->
+    <div
+      class="d-block d-md-none p-2 d-flex justify-content-center fixed-bottom blur"
+    >
+      <a href="#!" class="btn btn-warning rounded-pill">
+        <i class="fa-solid fa-user-plus small"></i>
+        <span class="small">Sign up for free</span></a
+      >
+    </div>
+    <div class="py-4 bg-danger d-md-none"></div>
     <!-- Nhúng JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
