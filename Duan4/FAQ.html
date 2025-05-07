@@ -35,9 +35,7 @@
           <!-- menu items -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="about.html"
@@ -89,72 +87,55 @@
         </div>
       </div>
     </nav>
-    <!-- about -->
-    <section class="py-4 border-bottom" style="margin-top: 40px">
+    <!-- main header -->
+    <header class="main-header py-5 border-bottom" style="margin-top: 30px">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center flex-md-row flex-column-reverse">
+          <!-- khối bên trái -->
           <div class="col-md-6">
-            <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              alias nulla minus sunt similique
-            </h5>
-            <p class="text-secondary small">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur, debitis mollitia laudantium tenetur, tempora
-              obcaecati provident voluptatum
+            <div class="d-flex">
+              <nav
+                aria-label="breadcrumb"
+                class="rounded-pill px-2 mb-1 border"
+              >
+                <ol class="breadcrumb mb-0 p-1">
+                  <li class="breadcrumb-item">
+                    <a href="index.html" class="text-decoration-none small"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item active small" aria-current="page">
+                    FAQ
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+            <p class="fw-light small text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quia natus amet! Amet reiciendis alias perspiciatis vel, nostrum
+              officia iste illum fugiat distinctio tenetur molestiae incidunt
+              repellat quisquam ratione vero!
             </p>
-            <a href="#!" class="btn btn-success mb-2 mb-md-0"
-              ><i class="fa-solid fa-user-plus me-1"></i>Sign up to Get
-              Started</a
-            >
+            <form class="d-flex me-1 w-75" role="search">
+              <input
+                class="form-control rounded-end-0 border-2"
+                type="Search"
+                placeholder="Search for..."
+                aria-label="Search"
+              />
+              <button class="btn btn-success rounded-start-0" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
           </div>
-          <div class="col-md-6">
-            <img class="img-fluid rounded-2" src="img/pic2.jpg" alt="" />
+          <!-- khối bên phải -->
+          <div class="col-md-6 mb-2 mb-md-0">
+            <img src="img/main-header.jpg" class="img-fluid rounded-2" alt="" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- welcome -->
-    <section class="py-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <h5>Welcome to Tuhoc.CC</h5>
-            <p class="text-secondary small">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              cum sint nobis accusamus at voluptatibus rerum provident eius.
-              Iusto reiciendis quod blanditiis optio commodi, recusandae nulla
-              aliquam repellendus pariatur! At?
-            </p>
-            <a href="#!" class="btn btn-success mb-2 mb-md-0"
-              ><i class="fa-solid fa-book-tanakh me-1"></i>Read about</a
-            >
-          </div>
-        </div>
-        <div class="row align-items-center mt-2 text-secondary">
-          <div class="col-md-4">
-            <img class="img-fluid rounded-2" src="img/main-header.jpg" alt="" />
-          </div>
-          <div class="col-md-4 small">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              dolorem voluptas alias animi beatae quibusdam ab iusto minima
-              corrupti dolores, incidunt laborum laboriosam facere cum,
-              veritatis dolore? Sed, ratione doloribus?
-            </p>
-          </div>
-          <div class="col-md-4 small">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              dolorem voluptas alias animi beatae quibusdam ab iusto minima
-              corrupti dolores, incidunt laborum laboriosam facere cum,
-              veritatis dolore? Sed, ratione doloribus?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </header>
     <!-- subcribe -->
     <section class="subcrible py-5 mt-3">
       <div class="container">
@@ -269,7 +250,16 @@
     >
       Copyright © 2030. Gà Lại Lập Trình
     </footer>
-
+    <!-- sticky footer -->
+    <div
+      class="d-block d-md-none p-2 d-flex justify-content-center fixed-bottom blur"
+    >
+      <a href="#!" class="btn btn-warning rounded-pill">
+        <i class="fa-solid fa-user-plus small"></i>
+        <span class="small">Sign up for free</span></a
+      >
+    </div>
+    <div class="py-4 bg-danger d-md-none"></div>
     <!-- Nhúng JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
