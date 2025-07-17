@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
+  </head>
+  <body style="font-family: lexend">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top small">
+      <div class="container">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="img/bootstrap-logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- menu items -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Course.html"
+                >Course</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- form tìm kiếm -->
+          <form class="d-flex me-1" role="search">
+            <input
+              class="form-control rounded-end-0 border-2"
+              type="Search"
+              placeholder="Search for..."
+              aria-label="Search"
+            />
+            <button class="btn btn-success rounded-start-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- main header -->
+    <header class="main-header border-bottom" style="margin-top: 70px">
+      <div class="container mb-3">
+        <div class="row align-items-center">
+          <!-- khối bên trái -->
+          <div class="col-md-6 login">
+            <h2 class="text-primary text-center fw-bold">
+              Freeship all Orders
+              <br />
+              Fast and Cheap
+            </h2>
+            <h5 class="fw-light">
+              Lorem ipsum, dolor sit amet consectetur. <br />
+              (30 years 50000m) <br />
+              Technology
+            </h5>
+            <!-- button -->
+            <a class="btn btn-success my-2 w-75" type="button"
+              ><i class="fa-solid fa-user-plus"></i> What happen next?
+            </a>
+            <p class="m-0 text-primary mb-1">
+              <i
+                class="fa-solid fa-check me-2 text-bg-success p-1 rounded-pill"
+              ></i
+              >100 years
+            </p>
+            <p class="m-0 text-primary mb-1">
+              <i
+                class="fa-solid fa-check me-2 text-bg-success p-1 rounded-pill"
+              ></i
+              >100 years
+            </p>
+            <p class="m-0 text-primary mb-1">
+              <i
+                class="fa-solid fa-check me-2 text-bg-success p-1 rounded-pill"
+              ></i
+              >100 years
+            </p>
+          </div>
+          <!-- khối bên phải -->
+          <div class="col-md-6">
+            <img class="rounded-3 w-100" src="img/main-header.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- problem and solution -->
+    <section class="border-bottom my-3">
+      <div class="container mb-3">
+        <div class="row flex-md-row flex-column-reverse">
+          <div class="col-md-6">
+            <iframe
+              class="rounded-2"
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-danger text-center fw-bolder">
+              Problems and solutions
+            </h2>
+            <div>
+              <strong>Biggest problems:</strong>
+              <span class="fw-light"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </div>
+            <div>
+              <strong>Example:</strong>
+              <span class="fw-light"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </div>
+            <div>
+              <strong>Solution:</strong>
+              <span class="fw-light"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- benefits -->
+    <section class="border-bottom my-3">
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col text-center">
+            <h2
+              class="fw-bold text-break rounded-2 px-2 text-decoration-underline"
+            >
+              Introduce Your Benefits!
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- benefit 1 -->
+          <div
+            class="col-md-4 col-sm-6 d-flex flex-column align-items-center text-primary fw-light"
+          >
+            <i class="fa-solid fa-award" style="font-size: 40px"></i>
+            <h3 class="m-0">Benefit 1</h3>
+            Lorem ipsum dolor sit amet.
+          </div>
+          <!-- benefit 2 -->
+          <div
+            class="col-md-4 col-sm-6 d-flex flex-column align-items-center text-danger fw-light"
+          >
+            <i class="fa-solid fa-medal" style="font-size: 40px"></i>
+            <h3 class="m-0">Benefit 2</h3>
+            Lorem ipsum dolor sit amet.
+          </div>
+          <!-- benefit 3 -->
+          <div
+            class="col-md-4 col-sm-12 d-flex flex-column align-items-center text-success fw-light"
+          >
+            <i class="fa-solid fa-truck" style="font-size: 40px"></i>
+            <h3 class="m-0">Benefit 3</h3>
+            Lorem ipsum dolor sit amet.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review -->
+    <section class="border-bottom pb-4">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <!-- review 1 -->
+                <div class="col-6 d-flex justify-content-end">
+                  <div class="card" style="max-width: 200px">
+                    <div class="card-body">
+                      <p class="fw-light" style="font-size: 0.7em">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit ipsa at quam laudantium magnam sint!
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="img/profile.avif"
+                        style="
+                          width: 60px;
+                          height: 60px;
+                          object-fit: cover;
+                          object-position: top;
+                          border-radius: 50%;
+                        "
+                        alt=""
+                      />
+                      <h6 class="fw-bold ms-2 small m-0">Review 1</h6>
+                      <!-- rating -->
+                      <div class="small">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-secondary small"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex justify-content-start">
+                  <div class="card" style="max-width: 200px">
+                    <div class="card-body">
+                      <p class="fw-light" style="font-size: 0.7em">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit ipsa at quam laudantium magnam sint!
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="img/profile.avif"
+                        style="
+                          width: 60px;
+                          height: 60px;
+                          object-fit: cover;
+                          object-position: top;
+                          border-radius: 50%;
+                        "
+                        alt=""
+                      />
+                      <h6 class="fw-bold ms-2 small m-0">Review 1</h6>
+                      <!-- rating -->
+                      <div class="small">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-secondary small"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <!-- review 1 -->
+                <div class="col-6 d-flex justify-content-end">
+                  <div class="card" style="max-width: 200px">
+                    <div class="card-body">
+                      <p class="fw-light" style="font-size: 0.7em">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit ipsa at quam laudantium magnam sint!
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="img/profile.avif"
+                        style="
+                          width: 60px;
+                          height: 60px;
+                          object-fit: cover;
+                          object-position: top;
+                          border-radius: 50%;
+                        "
+                        alt=""
+                      />
+                      <h6 class="fw-bold ms-2 small m-0">Review 1</h6>
+                      <!-- rating -->
+                      <div class="small">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-secondary small"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex justify-content-start">
+                  <div class="card" style="max-width: 200px">
+                    <div class="card-body">
+                      <p class="fw-light" style="font-size: 0.7em">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit ipsa at quam laudantium magnam sint!
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="img/profile.avif"
+                        style="
+                          width: 60px;
+                          height: 60px;
+                          object-fit: cover;
+                          object-position: top;
+                          border-radius: 50%;
+                        "
+                        alt=""
+                      />
+                      <h6 class="fw-bold ms-2 small m-0">Review 1</h6>
+                      <!-- rating -->
+                      <div class="small">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-secondary small"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <!-- review 1 -->
+                <div class="col-6 d-flex justify-content-end">
+                  <div class="card" style="max-width: 200px">
+                    <div class="card-body">
+                      <p class="fw-light" style="font-size: 0.7em">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit ipsa at quam laudantium magnam sint!
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="img/profile.avif"
+                        style="
+                          width: 60px;
+                          height: 60px;
+                          object-fit: cover;
+                          object-position: top;
+                          border-radius: 50%;
+                        "
+                        alt=""
+                      />
+                      <h6 class="fw-bold ms-2 small m-0">Review 1</h6>
+                      <!-- rating -->
+                      <div class="small">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-secondary small"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex justify-content-start">
+                  <div class="card" style="max-width: 200px">
+                    <div class="card-body">
+                      <p class="fw-light" style="font-size: 0.7em">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit ipsa at quam laudantium magnam sint!
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="img/profile.avif"
+                        style="
+                          width: 60px;
+                          height: 60px;
+                          object-fit: cover;
+                          object-position: top;
+                          border-radius: 50%;
+                        "
+                        alt=""
+                      />
+                      <h6 class="fw-bold ms-2 small m-0">Review 1</h6>
+                      <!-- rating -->
+                      <div class="small">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-secondary small"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-secondary rounded-2 opacity-25"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-secondary rounded-2 opacity-25"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- features -->
+    <h5 class="text-center mt-4">The Features</h5>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col text-primary">
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+          <strong>Feature 1 - </strong><span>Lorem ipsum dolor sit.</span>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!-- subcribe -->
+    <section class="subcrible py-5 mt-3">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div
+            class="col-md-4 text-white col-12 text-md-end text-center mb-2 mb-md-0"
+          >
+            Subscribe for newsletters
+          </div>
+          <!-- form email  -->
+          <div class="col-md-6 col-lg-4">
+            <form class="d-flex me-1" role="search">
+              <input
+                class="form-control rounded-end-0 border-2"
+                type="email"
+                placeholder="Your email..."
+                aria-label="email"
+              />
+              <button
+                class="btn btn-success rounded-start-0 d-flex align-items-center"
+                type="submit"
+              >
+                <i class="fa-solid fa-envelope me-2"></i>
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer bg-dark py-4">
+      <div class="container">
+        <div class="row text-white align-items-center">
+          <div class="col-md-3 small">
+            <img src="/img/logo-tuhoc-dark.png" alt="" />
+            <p class="p-0 m-0">Jayanagar, Bangalore,</p>
+            <p class="p-0 m-0">Karnataka, India.</p>
+            <p class="p-0 m-0">560011</p>
+            <p class="p-0 my-3">contact@tuhoc.cc</p>
+          </div>
+          <div class="col-md-2 col-4 d-flex flex-column">
+            <h6 class="fs-6">Main menu</h6>
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+          </div>
+          <div class="col-md-2 col-4 d-flex flex-column">
+            <h6 class="fs-6">Misc</h6>
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+            <a href="#!" class="link-warning text-decoration-none small"
+              >Link item</a
+            >
+          </div>
+          <div class="col-md-5 col-4 align-self-start">
+            <h6>Follow us</h6>
+            <div class="d-flex flex-column flex-sm-row align-items-start">
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-primary rounded-pill me-1 mb-2"
+                ><i class="fa-brands fa-facebook me-md-1 me-sm-0"></i
+                ><span class="d-lg-block d-none">Facebook</span></a
+              >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-info rounded-pill me-1 mb-2 text-white"
+                ><i class="fa-brands fa-twitter me-md-1 me-sm-0"></i
+                ><span class="d-lg-block d-none">Twitter</span></a
+              >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-danger rounded-pill me-1 mb-2"
+                ><i class="fa-brands fa-youtube me-md-1 me-sm-0"></i
+                ><span class="d-lg-block d-none">Youtube</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- copyright -->
+    <footer
+      style="height: 50px"
+      class="d-flex bg-black text-white justify-content-center align-items-center"
+    >
+      Copyright © 2030. Gà Lại Lập Trình
+    </footer>
+    <!-- sticky footer -->
+    <div
+      class="d-block d-md-none p-2 d-flex justify-content-center fixed-bottom blur"
+    >
+      <a href="#!" class="btn btn-warning rounded-pill">
+        <i class="fa-solid fa-user-plus small"></i>
+        <span class="small">Sign up for free</span></a
+      >
+    </div>
+    <div class="py-4 bg-danger d-md-none"></div>
+    <!-- Nhúng JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a7ace0ec86.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Product</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- list sản phẩm trang chủ -->
+    <div class="container-fluid my-3" style="max-width: 768px; margin: 0 auto">
+      <a href="#!" class="btn btn-sm btn-outline-danger mt-2 mt-sm-0"
+        >Tủ lạnh</a
+      >
+      <a href="#!" class="btn btn-sm btn-outline-danger mt-2 mt-sm-0"
+        >Máy giặt</a
+      >
+      <a href="#!" class="btn btn-sm btn-outline-danger mt-2 mt-sm-0"
+        >Điều hòa</a
+      >
+      <a href="#!" class="btn btn-sm btn-outline-danger mt-2 mt-sm-0">Tivi</a>
+    </div>
+    <!-- banner -->
+    <div class="container-fluid mt-3" style="max-width: 768px; margin: 0 auto">
+      <div class="row">
+        <!-- Ảnh lớn bên trái -->
+        <div class="col-md-8 col-12 mb-3 mb-md-0">
+          <img
+            src="img/Product5.jpg"
+            alt="Banner 1"
+            class="w-100 h-100"
+            style="object-fit: cover; border-radius: 10px; min-height: 250px"
+          />
+        </div>
+        <!-- Hai ảnh nhỏ bên phải xếp dọc -->
+        <div class="col-md-4 col-12">
+          <div class="row">
+            <div class="col-6 col-md-12 mb-3">
+              <img
+                src="img/Product5.jpg"
+                alt="Banner 2"
+                style="
+                  object-fit: cover;
+                  border-radius: 10px;
+                  min-height: 120px;
+                "
+              />
+            </div>
+            <div class="col-6 col-md-12">
+              <img
+                src="img/Product5.jpg"
+                alt="Banner 3"
+                style="
+                  object-fit: cover;
+                  border-radius: 10px;
+                  min-height: 120px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Silde tự chạy của một số sản phẩm tương tự -->
+
+    <div class="container-fluid mt-3" style="max-width: 768px; margin: 0 auto">
+      <h5>Danh mục sản phẩm</h5>
+      <div
+        id="similarProductsCarousel"
+        class="carousel slide mt-1 d-flex justify-content-center"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" style="width: 90%">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      class="object-fit-cover rounded-1"
+                      style="height: 8rem"
+                      src="img/Product5.jpg"
+                      alt=""
+                    />
+                    <p class="text-center" style="font-size: 13px">Tivi</p>
+                  </div>
+                  <div class="col-4">
+                    <img
+                      class="object-fit-cover rounded-1"
+                      style="height: 8rem"
+                      src="img/Product5.jpg"
+                      alt=""
+                    />
+                    <p class="text-center" style="font-size: 13px">Máy tính</p>
+                  </div>
+                  <div class="col-4">
+                    <img
+                      class="object-fit-cover rounded-1"
+                      style="height: 8rem"
+                      src="img/Product5.jpg"
+                      alt=""
+                    />
+                    <p class="text-center" style="font-size: 13px">Máy in</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      class="object-fit-cover rounded-1"
+                      style="height: 8rem"
+                      src="img/Product5.jpg"
+                      alt=""
+                    />
+                    <p class="text-center" style="font-size: 13px">Tủ lạnh</p>
+                  </div>
+                  <div class="col-4">
+                    <img
+                      class="object-fit-cover rounded-1"
+                      style="height: 8rem"
+                      src="img/Product5.jpg"
+                      alt=""
+                    />
+                    <p class="text-center" style="font-size: 13px">Máy giặt</p>
+                  </div>
+                  <div class="col-4">
+                    <img
+                      class="object-fit-cover rounded-1"
+                      style="height: 8rem"
+                      src="img/Product5.jpg"
+                      alt=""
+                    />
+                    <p class="text-center" style="font-size: 13px">Điều hòa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#similarProductsCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Trước</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#similarProductsCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Tiếp</span>
+        </button>
+      </div>
+    </div>
+    <!-- Sản phẩm nổi bật -->
+    <div
+      class="container-fluid mt-3 position-relative"
+      style="max-width: 768px; margin: 0 auto"
+    >
+      <h5>Sản phẩm bán chạy</h5>
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <div
+            class="border border-1 p-2 rounded-2 h-100"
+            style="background: #fff"
+          >
+            <img
+              src="img/tu-lanh-4-canh.jpg"
+              alt=""
+              class="w-100 mb-2 rounded-2"
+            />
+            <p>Snack & Munchies</p>
+            <p>Haldiram's Sev Bhujia</p>
+            <div class="d-inline-flex gap-1 align-items-center">
+              <small class="text-warning">
+                <div class="d-flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-fill text-warning"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-star-half text-warning"
+                  >
+                    <path
+                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                    ></path>
+                  </svg>
+                </div>
+              </small>
+              <span class="text-muted small">4.3 (4)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="position-absolute border p-1 rounded-2 border-primary"
+        style="bottom: -30px; right: 20px"
+        href="#!"
+        >Xem thêm >></a
+      >
+    </div>
+    <!-- lợi ích -->
+    <div class="container-fluid mt-5" style="max-width: 768px; margin: 0 auto">
+      <h5 class="mb-3">Khi mua hàng tại Điện Máy ABC</h5>
+      <div class="row text-center">
+        <div class="col-4">
+          <div class="mb-2">
+            <i class="fa-solid fa-truck-fast fa-2x text-primary"></i>
+          </div>
+          <p class="mb-1 fw-bold">Giao hàng miễn phí</p>
+          <small>Áp dụng cho đơn hàng nội thành</small>
+        </div>
+        <div class="col-4">
+          <div class="mb-2">
+            <i class="fa-solid fa-shield-halved fa-2x text-success"></i>
+          </div>
+          <p class="mb-1 fw-bold">Bảo hành 7 năm</p>
+          <small>Cam kết bảo hành dài hạn</small>
+        </div>
+        <div class="col-4">
+          <div class="mb-2">
+            <i class="fa-solid fa-boxes-stacked fa-2x text-warning"></i>
+          </div>
+          <p class="mb-1 fw-bold">Sản phẩm đa dạng</p>
+          <small>Đáp ứng mọi nhu cầu của bạn</small>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-light text-dark mt-5 pt-4 pb-3 border-top">
+      <div class="container">
+        <div class="row">
+          <!-- Địa chỉ -->
+          <div class="col-md-4 col-sm-6 mb-3">
+            <h6 class="fw-bold mb-2">Địa chỉ</h6>
+            <p class="mb-1">Công ty TNHH Điện Máy ABC</p>
+            <p class="mb-1">
+              123 Đường Lý Thường Kiệt, Quận 10, TP. Hồ Chí Minh
+            </p>
+            <p class="mb-1">Điện thoại: 0901 234 567</p>
+            <p>Email: info@dienmayabc.vn</p>
+          </div>
+          <!-- Chính sách bảo hành -->
+          <div class="col-md-4 col-sm-6 mb-3">
+            <h6 class="fw-bold mb-2">Chính sách bảo hành</h6>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Bảo hành chính hãng 12 tháng</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Đổi trả trong 7 ngày</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Hỗ trợ kỹ thuật 24/7</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Kết nối với chúng tôi & Logo -->
+          <div class="col-md-4 mb-3 text-center text-md-start">
+            <h6 class="fw-bold mb-2">Kết nối với chúng tôi</h6>
+            <div
+              class="d-flex flex-md-column align-items-md-start align-items-center justify-content-center"
+            >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-sm btn-primary rounded-pill me-1 mb-2"
+                ><i class="fa-brands fa-facebook me-md-1 me-sm-0"></i
+                ><span class="d-md-block d-none">Facebook</span></a
+              >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-sm btn-info rounded-pill me-1 mb-2 text-white"
+                ><i class="fa-brands fa-twitter me-md-1 me-sm-0"></i
+                ><span class="d-md-block d-none">Twitter</span></a
+              >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-sm btn-danger rounded-pill me-1 mb-2"
+                ><i class="fa-brands fa-youtube me-md-1 me-sm-0"></i
+                ><span class="d-md-block d-none">Youtube</span></a
+              >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-sm btn-secondary rounded-pill me-1 mb-2"
+                ><i class="fa-brands fa-instagram me-md-1 me-sm-0"></i
+                ><span class="d-md-block d-none">Instagram</span></a
+              >
+              <a
+                href="#!"
+                class="btn-social d-inline-flex align-items-center btn btn-sm btn-info text-white rounded-pill me-1 mb-2"
+                ><i class="me-md-1 me-sm-0"></i
+                ><span style="font-size: 12px">Zalo</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-12 text-center text-secondary"
+            style="font-size: 0.9rem"
+          >
+            &copy; 2024 Công ty TNHH Điện Máy ABC. Đã đăng ký bản quyền.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="main.js"></script>
+    <!-- js font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a7ace0ec86.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,2 +1,12 @@
-let myname = prompt("Điền tên của bạn");
-console.log("tên của tôi là:"+myname);
+let numberA = prompt("nhap numberA");
+console.log(typeof numberA);
+let numberB = 1;
+let tong = numberA + numberB;
+let hieu = numberA - numberB;
+console.log("tong la", tong);
+console.log(typeof tong);
+console.log(`ket qua a-b ${hieu}`);
+console.log(typeof hieu);
+let numberC = Number(prompt("nhap numberC"));
+console.log(numberC);
+console.log(typeof numberC);
